@@ -10,7 +10,7 @@ public class Usuario {
     @Column(name = "username")
     private String username;
 
-    @Column(name = "name")
+    @Column(name = "nombre")
     private String nombre;
 
     @Column(name = "password")
@@ -19,11 +19,14 @@ public class Usuario {
     @Column(name = "uid")
     private String uid;
 
-    @Column(name = "last_name")
+    @Column(name = "apellidos")
     private String apellidos;
 
     @Column(name = "email")
     private String email;
+
+    public Usuario() {
+    }
 
     public Usuario(String username, String nombre, String apellidos, String email, String password) {
         this.username = username;

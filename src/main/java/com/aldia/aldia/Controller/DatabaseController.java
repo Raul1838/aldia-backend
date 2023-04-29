@@ -39,18 +39,18 @@ public class DatabaseController {
 
         DatabaseReference ref = FirebaseDatabase.getInstance().getReference("/USUARIOS");
 
-        ref.addListenerForSingleValueEvent(new ValueEventListener() {
-
-            @Override
-            public void onDataChange(DataSnapshot dataSnapshot) {
-                Object document = dataSnapshot.getValue();
-                System.out.println(document);
-            }
-
-            @Override
-            public void onCancelled(DatabaseError error) {
-            }
-        });
+//        ref.addListenerForSingleValueEvent(new ValueEventListener() {
+//
+//            @Override
+//            public void onDataChange(DataSnapshot dataSnapshot) {
+//                Object document = dataSnapshot.getValue();
+//                System.out.println(document);
+//            }
+//
+//            @Override
+//            public void onCancelled(DatabaseError error) {
+//            }
+//        });
 
         return ref;
     }
